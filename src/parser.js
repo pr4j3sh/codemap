@@ -5,7 +5,7 @@ class Parser {
   constructor(dirPath) {
     if (!dirPath) throw new Error("directory path cannot be empty");
     this.dirPath = dirPath;
-    this.ignore = [];
+    this.ignore = ["node_modules", "package-lock.json", "venv"];
     this.tree = [];
   }
 

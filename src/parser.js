@@ -5,7 +5,7 @@ class Parser {
   constructor(dirPath) {
     if (!dirPath) throw new Error("directory path cannot be empty");
     this.dirPath = dirPath;
-    this.ignore = [".git", ".gitignore", "node_modules", "package-lock.json"];
+    this.ignore = ["node_modules", "package-lock.json", "dist", "venv"];
     this.tree = [];
   }
 
@@ -16,7 +16,7 @@ class Parser {
 
   #scanTree(dirPath) {
     return readdirSync(dirPath)
-      .filter((name) => !this.ignore.includes(name))
+      .filter((name) => !this.ignore.includes(name) && !name.startsWith("."))
       .map((name) => {
         const filePath = join(dirPath, name);
         return {

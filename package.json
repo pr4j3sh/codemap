@@ -1,7 +1,7 @@
 {
   "name": "@pr4j3sh/codemap",
   "description": "Parses file tree and it's contents in JSON format.",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "./dist/index.js",
   "scripts": {
     "test": "echo \"No test specified\" && exit 0",

@@ -2,6 +2,12 @@
 
 This is a javascript npm package that parses file tree and their contents in `JSON` format.
 
+## Installation
+
+```bash
+npm i @pr4j3sh/codemap
+```
+
 ## Usage
 
 ```js

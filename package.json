@@ -1,0 +1,39 @@
+{
+  "name": "@pr4j3sh/codemap",
+  "description": "Parses file tree and it's contents in JSON format.",
+  "version": "1.0.0",
+  "main": "./dist/index.js",
+  "scripts": {
+    "test": "echo \"No test specified\" && exit 0",
+    "build": "node esbuild.config.js",
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "keywords": [
+    "parser",
+    "file tree",
+    "json",
+    "map",
+    "npm",
+    "javascript",
+    "commonjs",
+    "frames"
+  ],
+  "author": "Prajesh Pratap Singh <prajesh.eleven118@gmail.com> (https://pr4j3sh.github.io/pr4j3sh/)",
+  "license": "MIT",
+  "homepage": "https://github.com/pr4j3sh/codemap#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pr4j3sh/codemap.git"
+  },
+  "bugs": {
+    "url": "https://github.com/pr4j3sh/codemap/issues"
+  },
+  "devDependencies": {
+    "esbuild": "^0.24.0",
+    "nodemon": "^3.1.7"
+  }
+}
